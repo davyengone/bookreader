@@ -1,25 +1,55 @@
 {
   "expo": {
-    "name": "book-reader",
+    "name": "Book Reader",
     "slug": "book-reader",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/reader-icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "net.hackages.bookreader",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/reader-icon.png",
+        "backgroundColor": "#173E48"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "net.hackages.bookreader"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/reader-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F7F9F6",
+          "image": "./assets/reader-icon.png",
+          "imageWidth": 100
+        }
+      ]
+    ],
+    "owner": "hackages_group",
+    "scheme": "hackages-bookreader",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "512c01a0-8b68-4279-9cc5-cafc3ea15d5b"
+      }
     }
   }
 }

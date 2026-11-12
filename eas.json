@@ -1,0 +1,26 @@
+{
+  "cli": {
+    "version": ">= 27.9.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "autoIncrement": true
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6833969152",
+        "appleTeamId": "4QU22KV747",
+        "appName": "Book Reader by Hackages"
+      }
+    }
+  }
+}
