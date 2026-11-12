@@ -12,9 +12,9 @@
 
 [Production build](https://expo.dev/accounts/hackages_group/projects/book-reader/builds/4c5b2bc6-ac0f-404a-9b72-dabfda8ca989) finished on 2026-11-12 at 14:17 UTC. The signed IPA was inspected: version/bundle identifier match; both illustrations, Literata, and the Hermes app bundle are present; export compliance is configured.
 
-[Submission](https://expo.dev/accounts/hackages_group/projects/book-reader/submissions/9c244aa9-528a-4a24-98b9-53b504aac521) is queued. [TestFlight](https://appstoreconnect.apple.com/apps/6833969152/testflight/ios) processing and tester availability have not yet been verified.
+[Submission](https://expo.dev/accounts/hackages_group/projects/book-reader/submissions/9c244aa9-528a-4a24-98b9-53b504aac521) was queued when this release record was written on 2026-11-12. See [release task #3](https://github.com/davyengone/bookreader/issues/3) for the latest verified status. [TestFlight](https://appstoreconnect.apple.com/apps/6833969152/testflight/ios) processing and tester availability must be verified separately from the successful native build.
 
-The Reader MVP internal group has automatic access to all builds. Tester assignment is configured; invitation status is pending the first processed build.
+The Reader MVP internal group has automatic access to all builds. Tester assignment is configured. A local release monitor checks the queued submission, Apple processing, group/build membership, and invitation status before closing task #3. It is bounded to approximately two hours and leaves the task open on errors or timeout; it needs the development Mac to remain running. Installation on the physical device is a separate check.
 
 ## Checks performed
 
